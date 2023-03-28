@@ -1,0 +1,112 @@
+html {
+  margin: 0;
+  background-image: url(../imagens/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+body{
+  min-height: 100vh;
+  margin: 0;
+}
+
+.nav{
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  gap:100px;
+
+}
+
+.button{
+  background-color: transparent;
+  color: aliceblue;
+  margin: 20px;
+  height: 20px;
+  width: 30px;
+  margin: 5px;
+  font-size: 20px;
+}
+.button :hover{
+  border-bottom: solid 1px white ;
+}
+
+.button > a{
+  text-decoration: none;
+  color:white
+}
+
+.myBox {
+  height: 250px;
+  width: 250px;
+  background: yellow;
+}
+
+.titulo-evento{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-description-container{
+  display: flex;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.event-description{
+  margin: 20px;
+}
+
+.exemplo-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.myButton{
+  width: 30vh;
+  height: 10vh;
+  background-color: rgb(6, 44, 87);
+  border: 1px solid white;
+  color: white;
+  font-size: large;
+  border-radius: 20px;
+}
+
+.container-codigo{
+  background-color: rgb(15, 15, 15);
+  margin: 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.codigo{
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 12, 12);
+
+}

@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+
+html,body {
+  text-shadow: 1px 1px 1px black;
+  margin: 0;
+  background-color: #2F4F4F;
+  min-height: 300vh;
+  font-family: "Libre Baskerville", serif;
+}
+
+.nav{
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  gap:100px;
+
+}
+
+.button{
+  background-color: transparent;
+  color: aliceblue;
+  margin: 20px;
+  height: 20px;
+  width: 30px;
+  margin: 5px;
+  font-size: 20px;
+}
+.button :hover{
+  border-bottom: solid 1px white ;
+}
+
+.button > a{
+  text-decoration: none;
+  color:white
+}
+
+.img-inicial {
+  width: 100%;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-inicial img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.conteudo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  height: 70vh;
+  background-color: rgb(24, 23, 23);
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.container-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.evento:hover {
+  border: 2px solid rgb(151, 149, 148);
+  height: calc(50vh - 4px);
+  width: calc(50vh - 4px);
+}
+
+.evento1 {
+  background-image: url(../imagens/onclick.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento2 {
+  background-image: url(../imagens/dbclick.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento3 {
+  background-image: url(../imagens/onchange.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento4 {
+  background-image: url(../imagens/input.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  transition: border .2s;
+}
+
+.evento5 {
+  background-image: url(../imagens/onload.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  transition: border .2s;
+}
+
+.evento6 {
+  background-image: url(../imagens/onmouseover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  transition: border .2s;
+}
+
+.evento7 {
+  background-image: url(../imagens/onmouseout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento8 {
+  background-image: url(../imagens/onkeydown.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento9 {
+  background-image: url(../imagens/onkeyup.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: border .2s;
+}
+
+.evento10 {
+  background-image: url(../imagens/onfocus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  height: 50vh;
+  width: 50vh;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  transition: border .2s;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 12, 12);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <title>Evento onChange</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <button class="button" > <a href="./index.html"> Home </a> </button>
+        <button class="button" > <a href="./onClick.html"> Onclick </a> </button>
+        <button class="button" > <a href="./dblClick.html"> OnDblClick </a> </button>
+        <button class="button" > <a href="./onChange.html"> onChange </a> </button>
+        <button class="button" > <a href="./onInput.html"> OnInput </a> </button>
+        <button class="button" > <a href="./onLoad.html"> OnLoad </a> </button>
+        <button class="button" > <a href="./onMouseOver.html"> OnMouseOver </a> </button>
+        <button class="button" > <a href="./onMouseOut.html"> OnMouseOut </a> </button>
+        <button class="button" > <a href="./onKeyDown.html"> OnKeyDow </a> </button>
+        <button class="button" > <a href="./onKeyUp.html"> OnKeyUp </a> </button>
+        <button class="button" > <a href="./onFocus.html"> OnFocus </a> </button>
+
+    </div>
+
+    <div class="titulo-evento">
+        <h1>Evento onChange </h1>
+
+        <p class="intro">Nessa página você ira aprender um pouco sobre o evento onChange </p>
+    </div>
+
+    <div class="event-description-container">
+        <h2>Como funciona o evento onChange ?</h2>
+
+        <p class="event-description">
+            O evento onChange é disparado quando o valor de um elemento HTML é alterado, geralmente em um formulário.
+            Ele
+            é comumente usado em elementos de formulário como input, select e textarea.
+
+            Por exemplo, quando o usuário altera o valor de um input de texto, seleciona uma opção diferente em um
+            select ou altera o texto em um textarea, o evento onChange é acionado. Isso permite que você execute ações
+            com base na alteração do valor do elemento.
+            <br>
+            <br>
+            Abaixo temnos um exemplo do evento  OnChange onde quando o usuario selecionar uma cidade sera mostrado um alerta:
+        </p>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Exemplo</h2>
+
+        <form>
+            <label for="cidade">Escolha uma cidade:</label>
+            <select id="cidade">
+                <option disabled selected>Selecione uma cidade</option>
+                <option value="São Paulo">São Paulo </option>
+                <option value="Rio de Janeiro">Rio de Janeiro </option>
+                <option value="Brasília">Brasília </option>
+                <option value="Salvador">Salvador </option>
+                <option value="Fortaleza">Fortaleza </option>
+            </select>
+        </form>
+    </div>
+
+    <div class="container-codigo">
+        <div class="codigo">
+            <p><strong style="color: red;">HTML:</strong></p>
+        <code>
+            &lt;form&gt;
+            <br>
+            &emsp;&emsp; &lt;label for="cidade"&gt;Escolha uma cidade:&lt;/label&gt;
+            <br>
+            &emsp;&emsp; &lt;select id="cidade"&gt;
+            <br>
+            &emsp;&emsp;&emsp;   
+            &lt;option disabled selected>Selecione uma cidade&lt;/option&gt;
+            <br>
+            &emsp;&emsp;&emsp; &lt;option value="São Paulo">São Paulo &lt;/option&gt;
+            <br>
+            &emsp;&emsp;&emsp; &lt;option value="Rio de Janeiro">Rio de Janeiro &lt;/option&gt;
+            <br>
+            &emsp;&emsp;&emsp; &lt;option value="Brasília">Brasília &lt;/option&gt;
+            <br>
+            &emsp;&emsp;&emsp; &lt;option value="Salvador">Salvador &lt;/option&gt;
+            <br>
+            &emsp;&emsp;&emsp; &lt;option value="Fortaleza">Fortaleza &lt;/option&gt;
+            <br>
+            &emsp;&emsp; &lt;/select&gt;
+            <br>
+            &lt;/form&gt;
+
+        </code>
+        </div>
+
+        <div class="codigo">
+            <p><strong style="color: red;"> JS: </strong></p>
+            <code>
+                document.querySelector('select').addEventListener('change', (e) => { <br>
+                    &emsp;&emsp; alert(`Voce selecionou a cidade ${e.target.value}`) <br>
+                }); 
+            </code>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Alexandre Sousa Garrido. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/onChange.js"></script>
+
+</body>
+
+</html>

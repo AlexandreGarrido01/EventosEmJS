@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <title>Evento onKeyDown</title>
+</head>
+
+<style>
+    body,html{
+        overflow:hidden;
+    }
+    footer{
+        position: absolute;
+        bottom:0;
+    }
+</style>
+
+<body>
+
+    <div class="nav">
+        <button class="button" > <a href="./index.html"> Home </a> </button>
+        <button class="button" > <a href="./onClick.html"> Onclick </a> </button>
+        <button class="button" > <a href="./dblClick.html"> OnDblClick </a> </button>
+        <button class="button" > <a href="./onChange.html"> onChange </a> </button>
+        <button class="button" > <a href="./onInput.html"> OnInput </a> </button>
+        <button class="button" > <a href="./onLoad.html"> OnLoad </a> </button>
+        <button class="button" > <a href="./onMouseOver.html"> OnMouseOver </a> </button>
+        <button class="button" > <a href="./onMouseOut.html"> OnMouseOut </a> </button>
+        <button class="button" > <a href="./onKeyDown.html"> OnKeyDow </a> </button>
+        <button class="button" > <a href="./onKeyUp.html"> OnKeyUp </a> </button>
+        <button class="button" > <a href="./onFocus.html"> OnFocus </a> </button>
+
+    </div>
+
+    <div class="titulo-evento">
+        <h1>Evento onKeyDown </h1>
+
+        <p class="intro">Nessa página você ira aprender um pouco sobre o evento onKeyDown </p>
+    </div>
+
+    <div class="event-description-container">
+        <h2>Como funciona o evento onKeyDown ?</h2>
+
+        <p class="event-description">
+            O evento onKeyDown é acionado quando uma tecla é pressionada no teclado enquanto o foco está em um elemento
+            HTML. Esse evento é útil para capturar entradas de teclado do usuário e executar ações com base nessas
+            entradas. É semelhante ao evento onKeyPress, mas com a diferença de que também é acionado quando uma tecla
+            não é suportada pela entrada de caracteres.
+            <br>
+            <br>
+            Abaixo temos um exemplo do evento OnKeyDown onde quando o usuario aperta uma tecla dentro do campo a baixo o sistema da um alerta:
+        </p>
+    </div>
+
+    
+    <div class="exemplo-container">
+        <h2>Exemplo</h2>
+
+        <input type="text" placeholder="Digite seu email">
+    </div>
+
+    <div class="container-codigo">
+        <div class="codigo">
+           <p><strong style="color: red;">HTML:</strong></p>
+        <code>
+            &lt;input type="text"/&gt;
+        </code>
+        <p><strong style="color: red;"> JS: </strong></p>
+        <code>
+            document.querySelector('input').addEventListener('keydown', (e) => { <br>
+               &emsp;&emsp;  alert(`A tecla ${e.key} foi pressionada`);
+                <br>
+            });
+        </code>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Alexandre Sousa Garrido. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/onKeyDown.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <title>Evento DblCLick</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <button class="button" > <a href="./index.html"> Home </a> </button>
+        <button class="button" > <a href="./onClick.html"> Onclick </a> </button>
+        <button class="button" > <a href="./dblClick.html"> OnDblClick </a> </button>
+        <button class="button" > <a href="./onChange.html"> onChange </a> </button>
+        <button class="button" > <a href="./onInput.html"> OnInput </a> </button>
+        <button class="button" > <a href="./onLoad.html"> OnLoad </a> </button>
+        <button class="button" > <a href="./onMouseOver.html"> OnMouseOver </a> </button>
+        <button class="button" > <a href="./onMouseOut.html"> OnMouseOut </a> </button>
+        <button class="button" > <a href="./onKeyDown.html"> OnKeyDow </a> </button>
+        <button class="button" > <a href="./onKeyUp.html"> OnKeyUp </a> </button>
+        <button class="button" > <a href="./onFocus.html"> OnFocus </a> </button>
+
+    </div>
+
+    <div class="titulo-evento">
+        <h1>Evento dblClick </h1>
+
+        <p class="intro">Nessa página você ira aprender um pouco sobre o evento dblClick </p>
+    </div>
+
+    <div class="event-description-container">
+        <h2>Como funciona o evento dblClick ?</h2>
+
+        <p class="event-description">
+            O evento dblClick é disparado quando o usuário clica duas vezes em um elemento HTML em um curto período de
+            tempo. É semelhante ao evento dblClick , mas com a diferença de que ocorre com um duplo clique em vez de um
+            único clique. Esse evento é útil para criar interações com elementos que requerem ações mais precisas e
+            específicas, como selecionar um item em uma lista ou editar um campo de texto. Ao utilizar o evento
+            dblClick, é possível criar experiências de usuário mais intuitivas e eficientes em sua aplicação ou site.
+            <br>
+            <br>
+            Abaixo temos um exemplo do evento OnDbClick onde quando o ususario clicar duas vezes seguidas no botão será mostrado um alerta:
+        </p>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Exemplo</h2>
+
+        <button id="myButton" class="myButton">Clique duas vezes aqui</button>
+    </div>
+
+    <div class="container-codigo">
+        <div class="codigo">
+            <p><strong style="color: red;">HTML:</strong></p>
+            <code>
+                &lt;button id="myButton"&gt;Clique aqui&lt;/button&gt;
+            </code>
+        </div>
+
+        <div class="codigo">
+            <p><strong style="color: red;"> JS: </strong></p>
+            <code>
+                document.querySelector('#myButton').addEventListener('dblclick', () => { <br>
+                &emsp;&emsp; alert('O botão foi clicado duas vezes seguidas em um curto periodo de tempo!')
+                <br>
+                });
+            </code>
+        </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Alexandre Sousa Garrido. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/onDblClick.js"></script>
+
+</body>
+
+</html>

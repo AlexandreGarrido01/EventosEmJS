@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <title>Evento onMouseOver</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <button class="button" > <a href="./index.html"> Home </a> </button>
+        <button class="button" > <a href="./onClick.html"> Onclick </a> </button>
+        <button class="button" > <a href="./dblClick.html"> OnDblClick </a> </button>
+        <button class="button" > <a href="./onChange.html"> onChange </a> </button>
+        <button class="button" > <a href="./onInput.html"> OnInput </a> </button>
+        <button class="button" > <a href="./onLoad.html"> OnLoad </a> </button>
+        <button class="button" > <a href="./onMouseOver.html"> OnMouseOver </a> </button>
+        <button class="button" > <a href="./onMouseOut.html"> OnMouseOut </a> </button>
+        <button class="button" > <a href="./onKeyDown.html"> OnKeyDow </a> </button>
+        <button class="button" > <a href="./onKeyUp.html"> OnKeyUp </a> </button>
+        <button class="button" > <a href="./onFocus.html"> OnFocus </a> </button>
+
+    </div>
+
+    <div class="titulo-evento">
+        <h1>Evento onMouseOver </h1>
+
+        <p class="intro">Nessa página você ira aprender um pouco sobre o evento onMouseOver </p>
+    </div>
+
+    <div class="event-description-container">
+        <h2>Como funciona o evento onMouseOver ?</h2>
+
+        <p class="event-description">
+            O evento onMouseOver é disparado quando o ponteiro do mouse é posicionado sobre um elemento HTML. Ele é útil
+            para criar interações com elementos que requerem ações adicionais quando o mouse está sobre eles, como
+            exibir informações adicionais ou efeitos visuais.
+            <br>
+            <br>
+            Abaixo temos um exemplo do evento OnMouseOver onde quando o usuario passa o mouse em cima da caixa o sistema mostra um alerta:
+        </p>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Exemplo</h2>
+
+        <div class="myBox"></div>
+    </div>
+
+    <div class="container-codigo">
+        <div class="codigo">
+        <p><strong style="color: red;">HTML:</strong></p>
+        <code>
+            &lt;div class="myBox"&gt;&lt;/div&gt;
+        </code>
+        <p><strong style="color: red;"> JS: </strong></p>
+        <code>
+            document.querySelector('.myBox').addEventListener('mouseover', (e) => { <br>
+               &emsp;&emsp; alert('O mouse entrou na div');
+                <br>
+            });
+        </code>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Alexandre Sousa Garrido. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/onMouseOver.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+    <title>Evento onLoad</title>
+
+    <style>
+        body,html{
+            overflow:hidden;
+        }
+        footer{
+            position: absolute;
+            bottom:0;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="nav">
+        <button class="button" > <a href="./index.html"> Home </a> </button>
+        <button class="button" > <a href="./onClick.html"> Onclick </a> </button>
+        <button class="button" > <a href="./dblClick.html"> OnDblClick </a> </button>
+        <button class="button" > <a href="./onChange.html"> onChange </a> </button>
+        <button class="button" > <a href="./onInput.html"> OnInput </a> </button>
+        <button class="button" > <a href="./onLoad.html"> OnLoad </a> </button>
+        <button class="button" > <a href="./onMouseOver.html"> OnMouseOver </a> </button>
+        <button class="button" > <a href="./onMouseOut.html"> OnMouseOut </a> </button>
+        <button class="button" > <a href="./onKeyDown.html"> OnKeyDow </a> </button>
+        <button class="button" > <a href="./onKeyUp.html"> OnKeyUp </a> </button>
+        <button class="button" > <a href="./onFocus.html"> OnFocus </a> </button>
+
+    </div>
+
+    <div class="titulo-evento">
+        <body onLoad="alert('A pagina foi completamente carregada!')">
+            <h1>Evento onLoad </h1>
+
+            <p class="intro">Nessa página você ira aprender um pouco sobre o evento onLoad </p>
+    </div>
+
+    <div class="event-description-container">
+        <h2>Como funciona o evento onLoad ?</h2>
+
+        <p class="event-description">
+            O evento onLoad é acionado quando um elemento da página ou a página inteira é carregada. Isso significa que
+            o
+            evento é acionado uma vez que todos os recursos (como imagens e arquivos CSS) tenham sido carregados
+            completamente.Geralmente, o evento é usado para executar ações que dependem do carregamento completo da
+            página, como inicializar plugins, carregar dados externos ou definir o foco em um elemento específico.
+            <br>
+            <br>
+            Como por exemplo o que foi usado nestá pagina, quando você carregou está pagina foi ativado um alerta em sua tela!
+        </p>
+    </div>
+
+    <div class="exemplo-container">
+        <h2>Exemplo</h2>
+
+        <p>Esta pagina é o exemplo funcional!</p>
+    </div>
+
+    <div class="container-codigo">
+        <div class="codigo">
+        <p><strong style="color: red;">HTML:</strong></p>
+        <code>
+            &lt;body onLoad="alert('A pagina foi completamente carregada!')"&gt;
+            <br>
+           &emsp;&emsp; CONTEUDO DA PÀGINA...
+            <br>
+           &lt;/body&gt;
+
+        </code>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Alexandre Sousa Garrido. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/onLoad.js"></script>
+
+</body>
+
+</html>
